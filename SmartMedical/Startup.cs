@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using SmartMedical.BLL;
+using SmartMedical.DAL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,9 +25,11 @@ namespace SmartMedical
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddTransient<SmartMedicalBLL>();
+            services.AddTransient<DBHelper>();
             //1.配置跨域处理，允许所有来源： 
             services.AddCors(options =>
-                options.AddPolicy("自定义的跨域策略名称", p => p.AllowAnyOrigin())
+                options.AddPolicy("smartmedical", p => p.AllowAnyOrigin())
             );
         }
 
@@ -41,13 +45,11 @@ namespace SmartMedical
                 app.UseExceptionHandler("/Home/Error");
             }
             app.UseStaticFiles();
-
             app.UseRouting();
 
 
             app.UseAuthorization();
-            app.UseCors("自定义的跨域策略名称");//必须位于UserMvc之前 
-            app.UseMvc();
+            app.UseCors("smartmedical");
 
             app.UseEndpoints(endpoints =>
             {

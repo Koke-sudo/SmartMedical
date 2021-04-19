@@ -1,0 +1,21 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>登录</title>
+  <script src="~/lib/jquery/dist/jquery.js"></script>
+</head>
+<body>
+</body>
+</html>
+<script>
+  $.get("/smartapi/login", function (res) {
+    console.log(res);
+  })
+</script>

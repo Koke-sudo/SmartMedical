@@ -2,6 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>283475ed-f82a-441b-92a2-b7c4115a336e</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SmartMedical.BLL\SmartMedical.BLL.csproj" />
+    <ProjectReference Include="..\SmartMedical.DAL\SmartMedical.DAL.csproj" />
+    <ProjectReference Include="..\SmartMedical.Model\SmartMedical.Model.csproj" />
+  </ItemGroup>
 
 </Project>

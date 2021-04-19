@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SmartMedical.DAL\SmartMedical.DAL.csproj" />
+    <ProjectReference Include="..\SmartMedical.Model\SmartMedical.Model.csproj" />
+  </ItemGroup>
+
 </Project>
