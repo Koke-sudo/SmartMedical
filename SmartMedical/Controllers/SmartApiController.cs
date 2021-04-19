@@ -30,7 +30,7 @@ namespace SmartMedical.Controllers
             int h = _bll.Login(m);
             return Ok(new { msg=h>0?"登陆成功!":"用户名或密码不正确!",state=h>0?true:false});
         }
-
+        //验证码 图形   未完成
         public IActionResult CreateValidCodeImage() 
         {
             var info = _captcha.Generate("2658");

@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using static SmartMedical.BLL.SmartMedicalBLL;
 
 namespace SmartMedical
 {
@@ -27,6 +28,7 @@ namespace SmartMedical
             services.AddControllersWithViews();
             services.AddTransient<SmartMedicalBLL>();
             services.AddTransient<DBHelper>();
+            services.AddTransient<LoginTel>();
             //1.配置跨域处理，允许所有来源： 
             services.AddCors(options =>
                 options.AddPolicy("smartmedical", p => p.AllowAnyOrigin())
