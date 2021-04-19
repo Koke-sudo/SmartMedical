@@ -23,6 +23,10 @@ namespace SmartMedical
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            //1.配置跨域处理，允许所有来源： 
+            services.AddCors(options =>
+                options.AddPolicy("自定义的跨域策略名称", p => p.AllowAnyOrigin())
+            );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,7 +44,10 @@ namespace SmartMedical
 
             app.UseRouting();
 
+
             app.UseAuthorization();
+            app.UseCors("自定义的跨域策略名称");//必须位于UserMvc之前 
+            app.UseMvc();
 
             app.UseEndpoints(endpoints =>
             {

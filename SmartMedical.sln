@@ -5,6 +5,12 @@ VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartMedical", "SmartMedical\SmartMedical.csproj", "{7644045F-3B23-4DA9-AE18-B885768A2E0B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartMedical.Model", "SmartMedical.Model\SmartMedical.Model.csproj", "{424598C7-20B4-4B4D-957B-2921189F665C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartMedical.DAL", "SmartMedical.DAL\SmartMedical.DAL.csproj", "{972D7EF6-A091-41B4-8E5F-8F468AA4844D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartMedical.BLL", "SmartMedical.BLL\SmartMedical.BLL.csproj", "{F01E7BA5-BD83-472C-88F3-0D389FA5A24B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{7644045F-3B23-4DA9-AE18-B885768A2E0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7644045F-3B23-4DA9-AE18-B885768A2E0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7644045F-3B23-4DA9-AE18-B885768A2E0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{424598C7-20B4-4B4D-957B-2921189F665C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{424598C7-20B4-4B4D-957B-2921189F665C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{424598C7-20B4-4B4D-957B-2921189F665C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{424598C7-20B4-4B4D-957B-2921189F665C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{972D7EF6-A091-41B4-8E5F-8F468AA4844D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{972D7EF6-A091-41B4-8E5F-8F468AA4844D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{972D7EF6-A091-41B4-8E5F-8F468AA4844D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{972D7EF6-A091-41B4-8E5F-8F468AA4844D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F01E7BA5-BD83-472C-88F3-0D389FA5A24B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F01E7BA5-BD83-472C-88F3-0D389FA5A24B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F01E7BA5-BD83-472C-88F3-0D389FA5A24B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F01E7BA5-BD83-472C-88F3-0D389FA5A24B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
