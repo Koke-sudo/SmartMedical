@@ -31,6 +31,10 @@ namespace SmartMedical
             services.AddCors(options =>
                 options.AddPolicy("smartmedical", p => p.AllowAnyOrigin())
             );
+            services.AddMemoryCache().AddSimpleCaptcha(builder =>
+            {
+                builder.UseMemoryStore();
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
